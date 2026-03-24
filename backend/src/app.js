@@ -9,7 +9,13 @@ const applicationRoutes = require('./routes/applications');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'https://arnifi-assignment.netlify.app'  // we'll update this after netlify gives the exact URL
+    ],
+    credentials: true
+}));
 app.use(express.json());
 
 // Routes
