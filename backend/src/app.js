@@ -12,7 +12,7 @@ const app = express();
 app.use(cors({
     origin: [
         'http://localhost:5173',
-        'https://arnifi-assignment.netlify.app'  // we'll update this after netlify gives the exact URL
+        'https://arnifi-assignment.netlify.app'
     ],
     credentials: true
 }));
